@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.user.coolweather.activity.SettingsActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#484E61"
+          >
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+
+            android:id="@+id/back"
+            android:background="@drawable/ic_back"
+            android:layout_alignParentLeft="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="设置"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <Button
+        android:id="@+id/switch_city"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="城市"
+        android:background="#0000"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:textSize="25sp"
+        />
+    <Button
+        android:id="@+id/onOff"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="25sp"
+        android:gravity="left"
+        android:paddingLeft="20dp"
+        android:text="开启通知"/>
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="25sp"
+        android:text="显示通知"
+        android:checked="true"
+        android:id="@+id/checkBox"
+        android:layout_gravity="center_horizontal" />
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="25sp"
+        android:text="显示华氏"
+        android:checked="false"
+        android:id="@+id/checkBox1"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

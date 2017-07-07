@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <include layout="@layout/title_layout"></include>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+      >
+
+        
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/detail_layout"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"></include>
+
+
+
+
+            <!--<include layout="@layout/list_layout"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                ></include>-->
+
+
+                <ListView
+                    android:background="#fff"
+                    android:divider="#ffffff"
+                    android:dividerHeight="1px"
+                    android:padding="10dp"
+                    android:id="@+id/weather_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="360dp"
+                     >
+
+
+                </ListView>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

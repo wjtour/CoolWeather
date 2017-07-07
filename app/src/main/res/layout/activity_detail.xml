@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#27A5F9"
+    >
+``  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#484E61">
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:id="@+id/back"
+        android:background="@drawable/ic_back"
+        android:layout_alignParentLeft="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:id="@+id/city_name"
+        android:text="city_name"
+        android:textSize="25dp"
+        android:layout_centerInParent="true"
+
+        />
+
+    </RelativeLayout>
+    <include layout="@layout/detail_layout"
+
+        ></include>
+</LinearLayout>
